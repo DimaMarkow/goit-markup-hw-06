@@ -783,6 +783,7 @@ body {
 
 	min-width: 528px;
 	min-height: 581px;
+	padding: 40px;
 
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -810,4 +811,105 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	fill: #000;
+}
+
+.form {
+	position: absolute;
+}
+
+.form-title {
+	display: block;
+	margin-bottom: 12px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+}
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+
+	width: 100%;
+}
+
+.form-field label {
+	margin-bottom: 4px;
+}
+
+.input-thumb {
+	position: relative;
+}
+
+.form-field input {
+	padding: 11px 42px;
+	width: 100%;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	color: #757575;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.form-icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+
+	width: 18px;
+	height: 18px;
+	fill: var(--title-text-color);
+
+	transform: translateY(-50%);
+}
+
+.form-input:focus + .form-icon {
+	fill: var(--accent);
+}
+
+.form-field textarea {
+	padding: 16px 12px;
+	resize: none;
+
+	color: #757575;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.form-argiment {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 8.38px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: #757575;
+}
+
+.link-agriment {
+	color: var(--accent);
+}
+.form-argiment input {
+	width: 16px;
+	height: 15px;
 }
