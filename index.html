@@ -359,47 +359,62 @@
 						<b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
 						<div class="main-form">
 							<div class="form-field">
-								<label for="name" class="form-label">Ім'я</label>
-								<div class="input-thumb">
-									<input class="form-input" type="text" name="name" id="name" />
-									<svg class="form-icon">
-										<use href="./image/icons.svg#icon-person-black-18dp-1"></use>
-									</svg>
-								</div>
+								<label for="name" class="form-label">
+									Ім'я
+									<span class="input-thumb">
+										<input class="form-input" type="text" name="name" id="name" />
+										<svg class="form-icon">
+											<use href="./image/icons.svg#icon-person-black-18dp-1"></use>
+										</svg>
+									</span>
+								</label>
 							</div>
 							<div class="form-field">
-								<label for="tel">Телефон</label>
-								<div class="input-thumb">
-									<input class="form-input" type="tel" name="tel" id="tel" />
-									<svg class="form-icon">
-										<use href="./image/icons.svg#icon-phone-black-18dp-1"></use>
-									</svg>
-								</div>
+								<label for="tel">
+									Телефон
+									<span class="input-thumb">
+										<input class="form-input" type="tel" name="tel" id="tel" />
+										<svg class="form-icon">
+											<use href="./image/icons.svg#icon-phone-black-18dp-1"></use>
+										</svg>
+									</span>
+								</label>
 							</div>
 							<div class="form-field">
-								<label for="mail">Пошта</label>
-								<div class="input-thumb">
-									<input class="form-input" type="email" name="mail" id="mail" />
-									<svg class="form-icon">
-										<use href="./image/icons.svg#icon-email-black-18dp-1"></use>
-									</svg>
-								</div>
+								<label for="mail">
+									Пошта
+									<span class="input-thumb">
+										<input class="form-input" type="email" name="mail" id="mail" />
+										<svg class="form-icon">
+											<use href="./image/icons.svg#icon-email-black-18dp-1"></use>
+										</svg>
+									</span>
+								</label>
 							</div>
 							<div class="form-field">
 								<label for="comment">Коментар</label>
-								<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+								<textarea
+									class="form-input"
+									name="comment"
+									id="comment"
+									cols="30"
+									rows="10"
+									placeholder="Введіть текст"
+								></textarea>
 							</div>
 						</div>
 
-						<div class="form-argiment">
-							<input type="checkbox" name="agriment" value="agriment" id="agriment" />
-							<label for="agriment">
-								Погоджуюся з розсилкою та приймаю
-								<a class="link-agriment" href="">Умови договору</a>
-							</label>
-						</div>
+						<label class="form-argiment" for="agriment">
+							<input class="checkbox" type="checkbox" name="agriment" value="agriment" id="agriment" />
+							<span class="check-pict"></span>
+							<!-- <svg class="check-icon">
+								<use href="./image/icons.svg#icon-Vector" width="16" height="15"></use>
+							</svg> -->
+							<span>Погоджуюся з розсилкою та приймаю</span>
+							<a class="link-agriment" href="">Умови договору</a>
+						</label>
 
-						<button type="submit">Отправить</button>
+						<div class="bottom-field"><button class="hero-button" type="submit">Отправить</button></div>
 					</form>
 				</div>
 			</div>

@@ -258,6 +258,7 @@ body {
 
 	color: var(--primary-bg-color);
 	background-color: var(--accent);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 	font-weight: 700;
 	font-size: 16px;
@@ -274,7 +275,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
 	cursor: pointer;
-	border: 2px solid var(--accent);
+	/* border: 2px solid var(--accent); */
 }
 
 .section {
@@ -813,6 +814,10 @@ body {
 	fill: #000;
 }
 
+.modal-icon:hover {
+	fill: var(--accent);
+}
+
 .form {
 	position: absolute;
 }
@@ -840,6 +845,7 @@ body {
 }
 
 .form-field label {
+	display: block;
 	margin-bottom: 4px;
 }
 
@@ -847,8 +853,8 @@ body {
 	position: relative;
 }
 
-.form-field input {
-	padding: 11px 42px;
+.form-input {
+	padding: 12px 42px;
 	width: 100%;
 
 	font-style: normal;
@@ -857,9 +863,12 @@ body {
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 
+	outline: transparent;
 	color: #757575;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
@@ -872,15 +881,24 @@ body {
 	fill: var(--title-text-color);
 
 	transform: translateY(-50%);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .form-icon {
 	fill: var(--accent);
 }
 
+.form-input:focus {
+	background-origin: border-box;
+	border: 1px solid var(--accent);
+}
+
 .form-field textarea {
 	padding: 16px 12px;
 	resize: none;
+
+	width: 448px;
+	max-height: 120px;
 
 	color: #757575;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -892,11 +910,14 @@ body {
 }
 
 .form-argiment {
+	position: relative;
+	display: block;
 	display: flex;
 	margin-top: 20px;
+	margin-bottom: 30px;
 	justify-content: center;
 	align-items: center;
-	gap: 8.38px;
+	gap: 4px;
 
 	font-weight: 400;
 	font-size: 14px;
@@ -906,10 +927,55 @@ body {
 	color: #757575;
 }
 
+.form-argiment span {
+	margin-left: 8.38px;
+}
+
 .link-agriment {
 	color: var(--accent);
+	text-decoration: underline;
 }
-.form-argiment input {
+
+.checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+
+	margin-left: 12px;
+
 	width: 16px;
 	height: 15px;
+	fill: var(--title-text-color);
+}
+
+.check-pict {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-left: 12px;
+	width: 16px;
+	height: 15px;
+	transform: translateY(-50%);
+
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+}
+
+.checkbox:checked + .check-pict {
+	background-image: url(../image/icon-check.svg);
+	background-size: contain;
+	background-origin: border-box;
+	border: none;
+	fill: #2196f3;
+}
+
+.bottom-field {
+	text-align: center;
 }
