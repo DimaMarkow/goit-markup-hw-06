@@ -992,12 +992,6 @@ body {
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
-
-	margin-left: 12px;
-
-	width: 16px;
-	height: 15px;
-	fill: var(--title-text-color);
 }
 
 .check-pict {
