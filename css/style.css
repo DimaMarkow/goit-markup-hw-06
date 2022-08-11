@@ -322,6 +322,7 @@ body {
 	width: 270px;
 	height: 120px;
 	background-color: #f5f4fa;
+	border-radius: 4px;
 	margin-bottom: 30px;
 }
 
@@ -473,7 +474,7 @@ body {
 	width: 170px;
 	height: 92px;
 	border: 1px solid var(--icon-gray);
-	border-radius: 0px;
+	border-radius: 4px;
 	display: block;
 	background-color: var(--primary-bg-color);
 
@@ -884,6 +885,7 @@ body {
 
 .form-field {
 	display: flex;
+
 	flex-direction: column;
 	margin-bottom: 10px;
 
@@ -892,7 +894,12 @@ body {
 
 .form-field label {
 	display: block;
-	margin-bottom: 4px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	color: #757575;
 }
 
 .input-thumb {
@@ -902,6 +909,8 @@ body {
 .form-input {
 	padding: 12px 42px;
 	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 10px;
 
 	font-style: normal;
 	font-weight: 400;
